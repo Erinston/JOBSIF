@@ -1,0 +1,24 @@
+CSV para Aluno
+	0-id
+	1-nome
+	2-cpf
+	3-matricula
+	4-telefone
+	5-usuario
+	6-senha
+	7-funcao
+
+CSV para jogos individuais
+	-id do aluno
+	-nome do esporte 
+CSV para jogos em dupla
+	-id do aluno
+	-id do segundo aluno
+	-nome do esporte 
+CSV para jogos em grupo
+	-id do aluno
+	-id do segundo aluno
+	-id do terceiro aluno
+	-id do quarto aluno
+	-nome do esporte 
+	

@@ -1,0 +1,47 @@
+
+
+
+body{
+ 	background-image: url("../jobs.png");
+ 	backface-visibility:all;
+  background-size: auto;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	text-align: center;	
+    margin: auto;
+}
+legend{
+
+ 	background: rgb(50,80,90);
+	 text-align: center;	
+	font-size: 80px;
+    margin: auto;
+}
+table{
+			border: 8px solid black ;
+  			border-collapse: collapse;
+  			color:darkblue;
+  			text-align: center;
+  			font-size: 30px;
+  			margin: auto;
+  			background: white;
+    		}
+th,td {
+			border: 8px solid black ;
+  			border-collapse: collapse;
+  			color:darkblue;
+  			text-align: center;
+  			font-size: 30px;
+  			margin: auto;
+    		}
+
+ tr:nth-child(even){background-color: green;}
+
+button{
+	
+	border: 5px ;
+	font-size: 36px;
+	margin: auto;
+	text-align: center;
+}

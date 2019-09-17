@@ -1,0 +1,44 @@
+
+body{
+ background-image: url("../nature.jpg");
+ background: rgb(50,80,90);
+ text-align: center;	
+	font-size: 20px;
+    margin: auto;
+}
+
+form{
+	border-collapse: collapse;
+	text-align: center;	
+	font-size: 20px;
+    margin: auto;
+}
+
+legend{
+	/*background: white;*/
+	border: 5px ;
+	font-size: 36PX;
+	margin: auto;
+
+}
+input{
+
+	border: 5px solid black ;
+	border-collapse: collapse;
+	text-align: center;	
+	font-size: 20px;
+    margin: auto;
+
+}
+table,th,td {
+			border: 5px solid orange ;
+  			border-collapse: collapse;
+  			color:darkblue;
+  			text-align: center;
+  			font-size: 20px;
+  			margin: auto;
+    		}
+
+ tr:nth-child(even){background-color: gray;}
+
+

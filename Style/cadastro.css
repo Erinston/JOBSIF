@@ -1,0 +1,41 @@
+
+body{
+	background-image: url("../jobs.png");
+ 	background-size: auto;
+ 	background-position:center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+	text-align: center;	
+	font-size: 30px;
+    margin: auto;
+}
+
+form{
+
+	text-align: center;	
+	font-size: 36px;
+    margin: auto;
+}
+a{ text-align-last: center;
+	font-size: 30px;
+	margin: auto;
+}
+
+label{
+	
+
+    background: white;
+	font-size: 36PX;
+	margin: auto;
+}
+input, {
+
+	
+	text-align: center;	
+	font-size: 30px;
+    margin: auto;
+
+}
+
+
+
