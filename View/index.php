@@ -10,7 +10,7 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<a href="CADASTRO.php"> Cadastro</a>
+	<a href="cadastro.php"> Cadastro</a>
 	<a href="login.php">Login</a>
 	<a href="sobre.php">Sobre</a>
 	<a href="tabela.php">Cadastrados</a>
