@@ -10,10 +10,30 @@ if (!isset($_SESSION['id'])&& !isset($_SESSION['nome'])) {
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<style type="text/css">
+		body{
+
+			background-image:"../nature.jpg";
+			text-align:center;
+		}
+
+
+	</style>
 	<title>Document</title>
 </head>
 <body>
-	<h1> Seja bem vindo</h1>
+	<h1>Seja bem vindo</h1>
+	<form action="">
+		<label>Modalidade:</label>
+		<input type="text" name="Modalidade" placeholder="ex:futebol">
+		<br><br>
+		<label>Modalidade:</label>
+		<input type="text" name="" placeholder="">
+
+
+	</form>
+		<a href="tabela.php"> Cadastrados</a>
+		<br><br>
 	<button>
 		<a href="../Controller/logout.php">sair</a>
 	</button>

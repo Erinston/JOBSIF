@@ -1,20 +1,22 @@
 
 body{
-	background-image: url("../jobs.png");
+	background-image: url("../nature.jpg");
  	background-size: auto;
  	background-position:center;
  	background-repeat: no-repeat;
  	background-size: cover;
-	text-align: center;	
+	text-align:center; 
 	font-size: 30px;
     margin: auto;
 }
 
 form{
-
-	text-align: center;	
+	align-items: center;
+	background:white;
 	font-size: 36px;
-    margin: auto;
+	padding:0;
+    margin: 30%;
+    border: 30px solid white;
 }
 a{ text-align-last: center;
 	font-size: 30px;

@@ -1,13 +1,3 @@
-<?php  
-//verif se existe usuario logado 
-session_start();
-if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
-	header("location:../View/entrou.php");
-} 
-?>
-	
-	<a href="sobre.php">Sobre</a>
-	
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,20 +7,19 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Jogos Internos IFPE</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="login.php">Login</a></li>
-        <li><a href="CADASTRO.php">Cadastre-se</a></li>
+        <li><a href="#">Navbar Link</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="">Confira os jogos</a></li>
+        <li><a href="#">Navbar Link</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -40,18 +29,18 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Conheca nossas modalidades</h1>
+        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Games</h5>
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">entre</a>
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
         </div>
         <br><br>
 
       </div>
     </div>
-     <div class="parallax"><img src="../esporte.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
 
@@ -63,28 +52,27 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Rapidez</h5>
+            <h5 class="center">Speeds up development</h5>
 
-            <p class="light">Presamos pela rapidiz 
-           que o usuario possa  usar as nossos site para saber sua colocação, o proximo adversário e etc...</p>
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Experiência do Usuário Focada</h5>
+            <h5 class="center">User Experience Focused</h5>
 
-            <p class="light">Nosso projeto tem como objetivo facilitar a escrição como também a organização dos Jogos internos IFPE mas conhecidos como JOBS tanto para o usuário quanto para o administrador.</p>
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">configurações</h5>
+            <h5 class="center">Easy to work with</h5>
 
-            <p class="light">  Esse site tem em suas configurações inscrição,calendario,tabelas de jogos etc... </p>
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
           </div>
         </div>
       </div>
@@ -101,7 +89,7 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="../esporte.jpg" alt=" img 2"></div>
+    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -110,8 +98,8 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>JOBS</h4>
-          <p class="left-align light">Os JOBS são os jogos internos do IFPE do campus igarassu que tem diversas modalidades podendo ser individuais, em dupla e grupo. Jogado por alunos, docentes, ex-alunos e  ;</p>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
         </div>
       </div>
 
@@ -127,7 +115,7 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="../esporte.jpg" alt="img 3"></div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
   <footer class="page-footer teal">

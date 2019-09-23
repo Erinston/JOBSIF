@@ -24,5 +24,8 @@ header("location:../View/login.php");
 
 }
  ?>
+ starta a sessao
+ if  isset()
+
 	
 //Redirecionando para o arquivo index.php
