@@ -1,13 +1,13 @@
 
 body{
-	background-image: url("../nature.jpg");
+	background-image: url("../esporte.jpg");
  	background-size: auto;
  	background-position:center;
  	background-repeat: no-repeat;
  	background-size: cover;
 	text-align:center; 
 	font-size: 30px;
-    margin: auto;
+    
 }
 
 form{
@@ -15,12 +15,14 @@ form{
 	background:white;
 	font-size: 36px;
 	padding:0;
-    margin: 30%;
+    margin-left: 30%;
+    margin-right: 30%;
     border: 30px solid white;
 }
-a{ text-align-last: center;
-	font-size: 30px;
-	margin: auto;
+button{
+ text-align-last: center;
+ font-size: 30px;
+ margin: auto;
 }
 
 label{
@@ -30,12 +32,19 @@ label{
 	font-size: 36PX;
 	margin: auto;
 }
-input, {
+input{
 
 	
 	text-align: center;	
 	font-size: 30px;
     margin: auto;
+
+}
+h1{
+	
+	background: white;
+	margin-left: 40%;
+    margin-right: 40%;
 
 }
 
