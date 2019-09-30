@@ -14,6 +14,7 @@ foreach ($file as $coluna => $key):
 	$explode = explode(";/;", $file[$coluna]);
 	if ($cpf == $explode[2]):
 		header("location: ../View/cadastro.php");
+		body("cpf ja existe");
 		break;
 	endif;
 	$id++;
@@ -33,6 +34,6 @@ fwrite($fopen,
 fclose($fopen);
 	
 //Redirecionando para o arquivo index.php
-header("location: ../View/cadastro.php");
+header("location: ../View/login.php");
 
  ?>
