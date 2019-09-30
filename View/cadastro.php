@@ -12,8 +12,11 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
 	<meta charset="UTF-8">
 	<title>	</title>
 </head>
-	<link rel="stylesheet" type="text/css" href="../Style/Cadastro.css">
+	<link rel="stylesheet" type="text/css" href="../Style/cadastro.css">
+	<button>
+		
 	<a href="index.php">Pagina inicial</a>
+	</button>
 <body>
 	<h1>Cadastro</h1>
 

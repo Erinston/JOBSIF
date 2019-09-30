@@ -13,8 +13,32 @@ if (!isset($_SESSION['id'])&& !isset($_SESSION['nome'])) {
 	<style type="text/css">
 		body{
 
-			background-image:"../nature.jpg";
+			background-image: url("../esporte.jpg");
+			background-repeat: no-repeat;
 			text-align:center;
+			margin-bottom: 10%;
+		}
+		h1{font-size: 70px;
+			margin-bottom: 10%;
+		}
+	form{
+		background: white;
+		margin-bottom: 10%;
+		margin-right:40%;
+		margin-left: 40%;
+
+	}
+	label{
+		font-size: 50px;
+		}
+		a{
+			font-family: 20px;
+			margin: 1%;
+		}
+		div{
+			background: #ffffff;
+			margin-right: 25%;
+			margin-left: 25%;
 		}
 
 
@@ -23,16 +47,25 @@ if (!isset($_SESSION['id'])&& !isset($_SESSION['nome'])) {
 </head>
 <body>
 	<h1>Seja bem vindo</h1>
-	<form action="">
-		<label>Modalidade:</label>
-		<input type="text" name="Modalidade" placeholder="ex:futebol">
-		<br><br>
-		<label>Modalidade:</label>
-		<input type="text" name="" placeholder="">
 
+		<div>
+			
+		<a href="cadInd.php"> Cadastrados individuais</a>
+		<a href="cadDup.php"> Cadastrados em dupla</a>
+		<a href="cadGrp.php"> Cadastrados em grupo</a>	
+		</div>
 
-	</form>
+<!-- 		<label>Modalidade</label><br><br>
+<form action="../Controller/modalidade.php" method="post">
+  <input type="checkbox" name="individual" value="Individual"> Fultebol<br>
+  <input type="checkbox" name="dupla" value="dupla"> Volei<br>
+  <input type="checkbox" name="grupo" value="grupo">LOL<br><br>
+  <input type="submit" value="Submit">
+</form>
+ -->
+
 		<a href="tabela.php"> Cadastrados</a>
+
 		<br><br>
 	<button>
 		<a href="../Controller/logout.php">sair</a>

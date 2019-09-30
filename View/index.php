@@ -6,7 +6,6 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
 } 
 ?>
 	
-	<a href="sobre.php">Sobre</a>
 	
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +18,10 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
 </head>
 <body>
   <nav class="white" role="navigation">
@@ -26,7 +29,9 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
       <a id="logo-container" href="#" class="brand-logo">Jogos Internos IFPE</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="login.php">Login</a></li>
-        <li><a href="CADASTRO.php">Cadastre-se</a></li>
+        <li><a href="cadastro.php">Cadastre-se</a></li>
+	         <li><a href="sobre.php">Sobre</a></li>
+          <li><a href="../calendario/index.php">Calendario</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -45,13 +50,13 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
           <h5 class="header col s12 light">Games</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">entre</a>
+          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">entre</a>
         </div>
         <br><br>
 
       </div>
     </div>
-     <div class="parallax"><img src="../esporte.jpg" alt="Unsplashed background img 1"></div>
+     <div class="parallax"><img style="filter:  grayscale(50%);" src="../esporte.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
 
@@ -161,16 +166,12 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      feito pela <a class="brown-text text-lighten-3" href="#!">Equipe 4</a>
       </div>
     </div>
   </footer>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
 
   </body>
 </html>

@@ -24,8 +24,8 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
       display: flex;
       min-height: 80vh;
       text-align:center;
-     font-size: 40px; 
-     width:80%;
+     font-size: 30px; 
+     width:100%;
     justify-content: center;
 }
 

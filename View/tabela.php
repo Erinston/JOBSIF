@@ -1,10 +1,3 @@
-<?php  
-//verif se existe usuario logado 
-session_start();
-if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
-	header("location:../View/entrou.php");
-} 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,6 +39,6 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
 
 		</table>
 	
-	<button><a href="index.php">Pagina Inicial</a></button>
+	<button><a href="entrou.php">Pagina Inicial</a></button>
 </body>
 </html>

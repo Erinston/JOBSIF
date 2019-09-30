@@ -12,7 +12,10 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
 	<meta charset="UTF-8">
 	<title>Login</title><link rel="stylesheet" type="text/css" href="../Style/cadastro.css">
 </head>
+<button>
+	
 <a href="index.php">Pagina inicial</a>
+</button> 
 <body>
 	<h1>Login</h1>
 	<form action="../Controller/auth.php" method="post">
@@ -21,8 +24,13 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
 		<label>Senha:</label>
 		<input type="password" name="pw"><br>
 		<input type="submit" value="entrar">
-	</form>
+	</form><br><br>
+
 	<button><a href="cadastro.php"> Cadastre-se</a></button>
+
+
+
+	<br><br><br><br><br><br><br>
 
 </body>
 </html>
