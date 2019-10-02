@@ -3,6 +3,7 @@ session_start();
 //verif se existe usuario logado 
 if (!isset($_SESSION['id'])&& !isset($_SESSION['nome'])) {
 	header("location:../View/index.php");
+
 }
 
 ?>
@@ -36,9 +37,10 @@ if (!isset($_SESSION['id'])&& !isset($_SESSION['nome'])) {
 			margin: 1%;
 		}
 		div{
-			background: #ffffff;
-			margin-right: 25%;
-			margin-left: 25%;
+			background:white;
+			margin-right: 40%;
+			margin-left: 40%;
+			margin-bottom: 5px;
 		}
 
 
@@ -47,11 +49,15 @@ if (!isset($_SESSION['id'])&& !isset($_SESSION['nome'])) {
 </head>
 <body>
 	<h1>Seja bem vindo</h1>
-
+		
 		<div>
-			
 		<a href="cadInd.php"> Cadastrados individuais</a>
+		</div>
+		<div>
 		<a href="cadDup.php"> Cadastrados em dupla</a>
+			
+		</div>
+		<div>
 		<a href="cadGrp.php"> Cadastrados em grupo</a>	
 		</div>
 

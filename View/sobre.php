@@ -4,40 +4,32 @@ session_start();
 if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
   header("location:../View/entrou.php");
 } 
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	
+include'header.php'; 
+
+?>	
 <style>
-    body{  
-      text-align:center;
-      align-items: center;
-    }
   table{
-      
-      border-collapse: collapse;
-      display: flex;
-      min-height: 80vh;
+
+   
+      display: block;
       text-align:center;
-     font-size: 30px; 
-     width:100%;
-    justify-content: center;
+     font-size: 20px; 
+  
 }
 
   tr:nth-child(odd){
     background:green;
   }
 tr{
-   border: 10px solid black;
+    color: black;
 }
+td,th{
+    border: 5px solid black;
+}
+
   </style>
 
-	<h1>Desenvolvedores</h1>
+	
 	<?php
 	$linhas =[ 
       ["Cândida Araújo", "17", "candida110214@gmail.com", "Candida-1102","983689481"],
@@ -48,6 +40,7 @@ tr{
       ["Ginaldo Ribero", "28", "sammykawaii@gmail.com", "Ninmery", "998303366"]	
 	]	 
 	 ?>
+   <br><br>
 	<table>
         <tr>
             <th>Nome</th>
@@ -66,6 +59,6 @@ tr{
     <?php endforeach ?>   
     </table>
 
-      <button><a href="index.php">Pagina inicial</a></button>
+    
 </body>
 </html>
