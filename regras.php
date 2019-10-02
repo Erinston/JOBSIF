@@ -31,7 +31,7 @@
 					<h2>Jogos individuais</h2>
 	<h3 style="background-color:rgb(180, 180, 180)"; >Xadres</h3>
 	<p>É jogado normalmente, um contra um, e ganhar aquele que capturar o Rei do oponente</p>
-	<h3 style="background-color:rgb(180, 180, 180)"; >Street Fighter</h1>
+	<h3 style="background-color:rgb(180, 180, 180)"; >Street Fighter</h3>
 	<p>1 contra 1 com dois rounds, vence aquele que ganhar os dois. Em caso de empate, haverá um 3 round.</p>
 				<h2>Jogos em dupla</h2>
 	<h3 style="background-color:rgb(180, 180, 180)";>Dominó</h3>
