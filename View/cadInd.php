@@ -4,16 +4,53 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
+<style type="text/css">
+				body{
+
+			background-image: url("../esporte.jpg");
+			background-repeat: no-repeat;
+			text-align:center;
+			margin-bottom: 10%;
+		}
+		h1{font-size: 20px;
+			margin-bottom: 10%;
+		}
+	form{
+		background: white;
+		margin-bottom: 10%;
+		margin-right:40%;
+		margin-left: 40%;
+
+	}
+	label{
+		font-size: 20px;
+		}
+		a{
+			font-family: 20px;
+			margin: 1%;
+		}
+		div{
+			background:white;
+			margin-right: 40%;
+			margin-left: 40%;
+			margin-bottom: 5px;
+		}
+
+
+
+	</style>
 <body>
 	
-	<label>Modalidade</label><br><br>
-<form action="../Controller/modalidade.php" method="post">
-  <input type="checkbox" name="individual" value="Individual"> Fultebol<br>
-  <input type="checkbox" name="dupla" value="dupla"> Volei<br>
-  <input type="checkbox" name="grupo" value="grupo">LOL<br><br>
+<form action="../Controller/modInd.php" method="post">
+	<label>modalidade</label><br>
+  <input type="checkbox" name="modalidade" value="Dama"> Dama<br>
+  <input type="checkbox" name="modalidade" value="Ping pong"> Ping pong<br>
+  <input type="checkbox" name="modalidade" value="Fifa">Fifa<br><br>
   <input type="submit" value="Submit">
 </form>
-
+<button>
+	<a href="entrou.php"> voltar</a>
+</button>
 
 </body>
 </html>

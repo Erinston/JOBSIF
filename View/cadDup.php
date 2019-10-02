@@ -4,24 +4,56 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style type="text/css">
-		body{
+				body{
+
+			background-image: url("../esporte.jpg");
+			background-repeat: no-repeat;
 			text-align:center;
+			margin-bottom: 10%;
 		}
+		h1{font-size: 70px;
+			margin-bottom: 10%;
+		}
+	form{
+		background: white;
+		margin-bottom: 10%;
+		margin-right:40%;
+		margin-left: 40%;
+
+	}
+	label{
+		font-size: 50px;
+		}
+		a{
+			font-family: 20px;
+			margin: 1%;
+		}
+		div{
+			background:white;
+			margin-right: 40%;
+			margin-left: 40%;
+			margin-bottom: 5px;
+		}
+
 
 	</style>
 </head>
 <body>
 	
-<form action="../Controller/modalidade.php" method="post">
-	<label>Modalidade</label><br>
-	<input type="checkbox" name="individual" value="Individual">FuteVolei<br>
-	<input type="checkbox" name="dupla" value="dupla">Domino<br>
-	<input type="checkbox" name="dupla" value="dupla">Frescobol<br>
-	<input type="checkbox" name="grupo" value="grupo">JustDance<br><br>
-		<legend>Matricula</legend>
-	<input type="text" name="Nome" placeholder="ex:aa8582aas">
+<form action="../Controller/modDul.php" method="post">
+	<label >Modalidade</label><br>
+	<input type="checkbox" name="modalidade"value="FutVolei">FutVolei<br>
+	<input type="checkbox" name="modalidade" value="Domino">Domino<br>
+	<input type="checkbox" name="modalidade" value="Frescobol">Frescobol<br>
+	<input type="checkbox" name="modalidade" value="JustDance">JustDance<br><br>
+	<legend></legend>
+		<label>Matricula</label>
+	<input type="text" name="matricula" placeholder="ex:aa8582aas" required><br>
 	<br><br><input type="submit" value="Submit">
-<br><a href="entrou.php">voltar</a>
 </form>
+<br>
+<button>
+	<a href="entrou.php">voltar</a>
+</button>
 </body>
 </html>

@@ -4,19 +4,63 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
+<style type="text/css">
+	body{
+		background-image: url("../esporte.jpg");
+		background-repeat: no-repeat;
+		text-align:center;
+		margin-bottom: 10%;
+		}
+	h1{
+		font-size: 20px;
+		margin-bottom: 10%;
+	  }
+	form{
+		background: white;
+		margin-bottom: 10%;
+		margin-right:40%;
+		margin-left: 40%;
+		}
+	label{
+			font-size: 20px;
+		}
+	a{
+		font-family: 20px;
+		margin: 1%;
+	}
+	div{
+		background:white;
+		margin-right: 40%;
+		margin-left: 40%;
+		margin-bottom: 5px;
+		}
+</style>
+
 <body>
 	
-<form action="../Controller/modalidade.php" method="post">
+<form action="../Controller/modGrup.php" method="post">
 	<label>Modalidade</label><br>
-	<br><br><br><input type="checkbox" name="futebol" value="dupla">Futebol de areia<br>
-	<input type="checkbox" name="LoL" value="dupla">LoL<br>
-	<input type="checkbox" name="dupla" value="dupla">Cs<br>
-	<input type="checkbox" name="grupo" value="grupo">JustDance<br>	
-		<legend>Matricula</legend>
-	<input type="text" name="matricula" placeholder="ex:aa8582aas">
-	<br><input type="submit" value="Submit">
+	<input type="checkbox" name="modalidade" value="Futebol">Futebol de areia<br>
+	<input type="checkbox" name="modalidade" value="LoL">LoL<br>
+	<input type="checkbox" name="modalidade" value="Cs">Cs<br>
+	<input type="checkbox" name="modalidade" value="JustDance">JustDance<br>	
+		<legend>Matriculas</legend><br>
+		<label>Matricula</label>
+	<input type="text" name="matricula1" placeholder="ex:aa8582aas"><br>
+		<label>Matricula</label>
+	<input type="text" name="matricula2" placeholder="ex:aa8582aas"><br>
+		<label>Matricula</label>
+	<input type="text" name="matricula3" placeholder="ex:aa8582aas"><br>
+		<label>Matricula</label>
+	<input type="text" name="matricula4" placeholder="ex:aa8582aas"><br>
 
-<br><a href="entrou.php">voltar</a>
+	<br><input type="submit" value="Submit">
+</form>
+<br>
+<button>
+	<a href="entrou.php">voltar</a>
+</button>
+
 </body>
 </html>
 
