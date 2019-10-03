@@ -24,7 +24,8 @@
       <ul class="right hide-on-med-and-down">
         <li><a href="login.php">Login</a></li>
         <li><a href="cadastro.php">Cadastre-se</a></li>
-	         <li><a href="sobre.php">Sobre</a></li>
-          <li><a href="../calendario/index.php">Calendario</a></li>
+           <li><a href="sobre.php">Sobre</a></li>
+	         <li><a href="regras.php">Regras</a></li>
+          <li><a href="../Calendarioatualizado/index.php">Calendario</a></li>
       </ul>
       
