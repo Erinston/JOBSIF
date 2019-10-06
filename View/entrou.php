@@ -5,61 +5,61 @@ if (!isset($_SESSION['id'])&& !isset($_SESSION['nome'])) {
 	header("location:../View/index.php");
 
 }
+include'header.php'; 
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<style type="text/css">
-		body{
+<style type="text/css">
 
-			background-image: url("../esporte.jpg");
-			background-repeat: no-repeat;
-			text-align:center;
-			margin-bottom: 10%;
-		}
-		h1{font-size: 70px;
-			margin-bottom: 10%;
-		}
-	form{
-		background: white;
-		margin-bottom: 10%;
-		margin-right:40%;
-		margin-left: 40%;
 
-	}
-	label{
-		font-size: 50px;
-		}
+
+		
+	
+	
 		a{
-			font-family: 20px;
-			margin: 1%;
+		
+		color: black;	
 		}
 		div{
-			background:white;
-			margin-right: 40%;
-			margin-left: 40%;
-			margin-bottom: 5px;
+			color: black;
+		}
+		ul{
+			text-align: center;
+			font-size: 29px;
 		}
 
 
 	</style>
-	<title>Document</title>
-</head>
-<body>
-	<h1>Seja bem vindo</h1>
+
+<center>
+	
+<h1>Seja bem vindo</h1>
+</center>
 		
+<br><br>
+<ul class="collapsible">
+<ul class="collapsible">
+	<h5 style="background: black ;color: white;">ESCOLHA JOGO</h5>
+</ul>
+	<div>
 		<div>
-		<a href="cadInd.php"> Cadastrados individuais</a>
+			<a href="cadInd.php">Individual</a>	
 		</div>
+
 		<div>
-		<a href="cadDup.php"> Cadastrados em dupla</a>
-			
+			<a href="cadDup.php">Dupla</a>	
 		</div>
+
 		<div>
-		<a href="cadGrp.php"> Cadastrados em grupo</a>	
+			<a href="cadGrp.php">Grupo</a>	
 		</div>
+	</div>
+</ul>
+<br><br><br>
+
+
+					
+					
+	
 
 <!-- 		<label>Modalidade</label><br><br>
 <form action="../Controller/modalidade.php" method="post">
@@ -69,11 +69,12 @@ if (!isset($_SESSION['id'])&& !isset($_SESSION['nome'])) {
   <input type="submit" value="Submit">
 </form>
  -->
+<ul class="collapsible">
 
 		<a href="tabela.php"> Cadastrados</a>
-
+</ul>
 		<br><br>
-	<button>
+	<button style="background: black">
 		<a href="../Controller/logout.php">sair</a>
 	</button>
 </body>

@@ -15,8 +15,8 @@ include'header.php';
     }
 </style>
 <div class="container">
-	<div class="container">
-		<div class="container">
+	<div class="container row">
+		<div class="container row">
 			<form action="../Controller/adicionar.php" method="post">
 				<legend>Cadastro</legend>
 				<label>NOME:</label>

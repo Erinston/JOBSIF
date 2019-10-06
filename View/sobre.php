@@ -1,9 +1,6 @@
 <?php  
 //verif se existe usuario logado 
-session_start();
-if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
-  header("location:../View/entrou.php");
-} 
+
 include'header.php'; 
 
 ?>	
@@ -41,23 +38,27 @@ td,th{
 	]	 
 	 ?>
    <br><br>
+   
+
 	<table>
-        <tr>
-            <th>Nome</th>
-            <th>Idade</th>
-            <th>Email</th>
-            <th>GitHub</th>
-            <th>Fone</th>
-        </tr>
+      <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Email</th>
+           <th>GitHub</th>
+          <th>Fone</th>
+      </tr>
      
-    <?php foreach ($linhas as $linha):?>
-     <tr>   
-    <?php  foreach($linha as $linhareal):?>
+      <?php foreach ($linhas as $linha):?>
+      <tr>   
+      <?php  foreach($linha as $linhareal):?>
             <td><?=$linhareal?></td>
-    <?php endforeach?>
-    </tr>
-    <?php endforeach ?>   
+      <?php endforeach?>
+      </tr>
+      <?php endforeach ?>   
     </table>
+ 
+     <br><br>
 
     
 </body>
