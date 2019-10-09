@@ -8,13 +8,6 @@ include'header.php';
 ?>
 	
 	
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="">Confira os jogos</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">

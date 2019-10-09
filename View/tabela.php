@@ -5,7 +5,7 @@
 	<title>Document</title>
 </head> 
 <link rel="stylesheet" type="text/css" href="../Style/tabela.css">
-<body>
+<body> 
 		<table>
 			<legend>Tabela</legend>
 			<tr>

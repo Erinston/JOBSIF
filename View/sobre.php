@@ -5,13 +5,13 @@ include'header.php';
 
 ?>	
 <style>
-  table{
 
-   
+table{
       display: block;
       text-align:center;
      font-size: 20px; 
-  
+  margin-left:30% ;
+  margin-right: 30%;
 }
 
   tr:nth-child(odd){
@@ -37,9 +37,8 @@ td,th{
       ["Ginaldo Ribero", "28", "sammykawaii@gmail.com", "Ninmery", "998303366"]	
 	]	 
 	 ?>
-   <br><br>
-   
-
+  
+     
 	<table>
       <tr>
           <th>Nome</th>
@@ -58,6 +57,7 @@ td,th{
       <?php endforeach ?>   
     </table>
  
+   
      <br><br>
 
     

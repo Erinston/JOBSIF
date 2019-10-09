@@ -14,22 +14,24 @@ include'header.php';
         margin: 0;
     }
 </style>
-<div class="container">
+<div class="container row">
+<div class="container row">
+
 	<div class="container row">
 		<div class="container row">
 			<form action="../Controller/adicionar.php" method="post">
-				<legend>Cadastro</legend>
+				<!-- <legend>Cadastro</legend> -->
 				<label>NOME:</label>
 				<input type="text" name="nome" placeholder="EX:João">
-				<label>CPF:</label>
+				<label>CPF:*</label>
 				<input type="number" name="cpf" placeholder="Ex:1059865-75" required>
 				<label>MATRICULA:</label>
 				<input type="text" name="matricula" placeholder="Ex:20191brasil0805">
 				<label>TELEFONE:</label>
 				<input type="number" name="telefone" placeholder="ex:98888-8888">
-				<label>USUARIO:</label>
-				<input type="text" name="usuario" placeholder="EX:docente/aluno/sevirdor">
-				<label>SENHA:</label>
+				<label>USUARIO:*</label>
+				<input type="text" name="usuario" placeholder="EX:docente/aluno/sevirdor" required>
+				<label>SENHA:*</label>
 				<input type="password" name="pw" placeholder="*******" required>
 				<input type="submit" value="Enviar">
 			</form>
@@ -37,6 +39,6 @@ include'header.php';
 		</div>
 	</div>
 </div>
-		
+</div>		
 </body>
 </html>

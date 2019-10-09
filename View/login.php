@@ -7,21 +7,25 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
 }
 include'header.php'; 
 ?>
-	<div class="container row" >
-		<div class="container">
-			<div class="container">
+<style type="text/css">
+
+</style>
+	<div class="container " >
+	<div class="container " >
+		<div class="container ">
+			<div class="container ">
 				<form action="../Controller/auth.php" method="post">
-					
-					<label>Usuario</label>
+					<!-- <legend>Login</legend> -->
+					<label>USUARIO:</label>
 					<input type="text" name="usuario" required>
-					<label>Senha:</label>
+					<label>SENHA:</label>
 					<input type="password" name="pw" required>
 					<input type="submit" value="entrar">
 				</form>
 			</div>
 		</div>
 	</div>
-	
+	</div>
 
 </body>
 </html>

@@ -23,9 +23,21 @@
       <a id="logo-container" href="index.php" class="brand-logo">Jogos Internos IFPE</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="login.php">Login</a></li>
-        <li><a href="cadastro.php">Cadastre-se</a></li>
-           <li><a href="sobre.php">Sobre</a></li>
-	         <li><a href="regras.php">Regras</a></li>
-          <li><a href="../Calendarioatualizado/index.php">Calendario</a></li>
+        <li><a href="cadastro.php">Cadastro</a></li>
+	         <li><a href="sobre.php">Sobre</a></li>
+          <li><a href="../calendario/index.php">Calendario</a></li>
+      </ul> 
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="login.php">LOGIN</a></li> 
+        <li><a href="cadastro.php">Cadastro</a></li>  
+        <li><a href="../calendario/index.php">CALENDARIO</a></li>
+        <li><a href="regras.php">REGRAS</a></li> 
+        <li><a href="sobre.php">SOBRE</a></li> 
       </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+     <br><br><br>
       
