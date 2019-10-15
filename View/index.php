@@ -12,9 +12,9 @@ include'header.php';
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Conheca nossas modalidades</h1>
+        <h1 class="header center teal-text text-lighten-2">Regras</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Games</h5>
+          <h5 class="header col s12 light">JOGOS</h5>
         </div>
         <div class="row center">
           <a href="regras.php" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">entre</a>

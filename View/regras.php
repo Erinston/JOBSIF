@@ -35,7 +35,7 @@ include'header.php';
 				}
 	</style>
 
-	
+	<br><br>
 					<h1>Regras</h1>
 
 					<h2>Jogos individuais</h2>

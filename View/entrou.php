@@ -16,7 +16,6 @@ include'header.php';
 	
 	
 		a{
-		
 		color: black;	
 		}
 		div{
@@ -24,8 +23,12 @@ include'header.php';
 		}
 		ul{
 			text-align: center;
-			font-size: 29px;
+			font-size: 29px;	
 		}
+		h5{
+			color: white;
+		}
+
 
 
 	</style>
@@ -36,46 +39,35 @@ include'header.php';
 </center>
 		
 <br><br>
-<ul class="collapsible">
-<ul class="collapsible">
-	<h5 style="background: black ;color: white;">ESCOLHA JOGO</h5>
-</ul>
-	<div>
-		<div>
-			<a href="cadInd.php">Individual</a>	
-		</div>
+<div class="container row">
+		<div class="container row">
+			<ul class="collapsible">
+				<h5 style="background: #4db6ac ;">ESCOLHA JOGO</h5>
+				<div>
+					<div > 
+						<a href="cadInd.php">Individual</a>	
+					</div>
 
-		<div>
-			<a href="cadDup.php">Dupla</a>	
-		</div>
+					<div>
+						<a href="cadDup.php">Dupla</a>	
+					</div>
 
-		<div>
-			<a href="cadGrp.php">Grupo</a>	
-		</div>
+					<div>
+						<a href="cadGrp.php">Grupo</a>	
+					</div>
+				</div>
+			</ul>
+			<br><br><br>	
+			<ul class="collapsible">
+
+					<a href="tabela.php"> Cadastrados de Usuarios</a>
+			</ul>
+					<br>
 	</div>
-</ul>
-<br><br><br>
-
-
-					
-					
-	
-
-<!-- 		<label>Modalidade</label><br><br>
-<form action="../Controller/modalidade.php" method="post">
-  <input type="checkbox" name="individual" value="Individual"> Fultebol<br>
-  <input type="checkbox" name="dupla" value="dupla"> Volei<br>
-  <input type="checkbox" name="grupo" value="grupo">LOL<br><br>
-  <input type="submit" value="Submit">
-</form>
- -->
-<ul class="collapsible">
-
-		<a href="tabela.php"> Cadastrados</a>
-</ul>
-		<br><br>
-	<button style="background: black">
+	<button style="background:white;">
 		<a href="../Controller/logout.php">sair</a>
 	</button>
+ 
+</div>
 </body>
 </html>

@@ -10,8 +10,8 @@ table{
       display: block;
       text-align:center;
      font-size: 20px; 
-  margin-left:30% ;
-  margin-right: 30%;
+     margin: center;
+ 
 }
 
   tr:nth-child(odd){
@@ -38,7 +38,11 @@ td,th{
 	]	 
 	 ?>
   
-     
+  <br>
+    
+  <div class="container row">
+  <div class="container row">
+    
 	<table>
       <tr>
           <th>Nome</th>
@@ -59,7 +63,7 @@ td,th{
  
    
      <br><br>
-
-    
+    </div>
+  </div>   
 </body>
 </html>
