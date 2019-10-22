@@ -20,7 +20,7 @@ include'header.php';
 	<div class="container row">
 	<ul class="collapsible">
 		<div class="container row">
-				<h1 style="color:white; font-size: 30px; border: 3px solid #4db6ac; text-align: center; background:#4db6ac; ">Cadastro</h1>
+				<h1  style="color:#4db6ac; font-size: 30px; border: 3px solid white; text-align: center; background:white;">Cadastro</h1><br>
 
 			<form action="../Controller/adicionar.php" method="post">
 				<div class="row">

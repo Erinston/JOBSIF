@@ -1,5 +1,16 @@
-<?php 
-include'header.php';  ?>
+<?php  
+//verif se existe usuario logado 
+
+session_start();
+//verif se existe usuario logado 
+if (!isset($_SESSION['id'])&& !isset($_SESSION['nome'])) {
+  header("location:../View/index.php");
+
+}
+
+include'header.php'; 
+
+?>
 
 <div class="container row">
 		<div class="container row">
@@ -8,9 +19,10 @@ include'header.php';  ?>
 				<div class="container row">
 					<div class="collapsible">
 						<form action="../Controller/modInd.php" method="post">
-							<label>modalidade</label><br>
-						  <input type="checkbox" name="modalidade" value="Dama"> Dama<br>
-						  <input type="checkbox" name="modalidade" value="Ping pong"> Ping pong<br>
+							<h5 style="color: #4db6ac ; font-size: 35px">Modalidade</h5><br>
+						  <input type="checkbox" name="modalidade" value="Dama">Dama<br>
+						  <input type="checkbox" name="modalidade" value="Xadres">Xadres<br>
+						  <input type="checkbox" name="modalidade" value="Street Fighter">Street Fighter<br>
 						  <input type="checkbox" name="modalidade" value="Fifa">Fifa<br><br>
 						  <input type="submit" value="Submit">
 						</form>
@@ -20,6 +32,10 @@ include'header.php';  ?>
 				</div>	
 			</div>	
 		</div>
+
+
+
+
 				<button>
 					<a href="entrou.php"> voltar</a>
 				</button>

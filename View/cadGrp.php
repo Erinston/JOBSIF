@@ -1,5 +1,16 @@
-<?php include'header.php'; 
- ?>
+<?php  
+//verif se existe usuario logado 
+
+session_start();
+//verif se existe usuario logado 
+if (!isset($_SESSION['id'])&& !isset($_SESSION['nome'])) {
+  header("location:../View/index.php");
+
+}
+
+include'header.php'; 
+
+?>
 
 <br>
 <div class="container">
@@ -9,17 +20,19 @@
 			<form action="../Controller/modGrup.php" method="post">
 				<center>
 					
-				<label>Modalidade</label><br>
-				<input type="checkbox" name="modalidade" value="Futebol">Futebol de areia<br>
+					<h5 style="color: #4db6ac ; font-size: 35px">Modalidade</h5>
+				<br>
+				<input type="checkbox" name="modalidade" value="Futebol">Futebol<br>
 				<input type="checkbox" name="modalidade" value="LoL">LoL<br>
-				<input type="checkbox" name="modalidade" value="Cs">Cs<br>
-				<input type="checkbox" name="modalidade" value="JustDance">JustDance<br><br>	
-				<ul class="collapsible container row">
-					<legend>Matriculas</legend>
-				</ul><br>
+				<input type="checkbox" name="modalidade" value="Cs">Cs<br>	
+				
+				<br>
 				</center>
 				<ul class="container row"> 
-					<label>Matricula</label>
+						<label>Nome da equipe</label>
+					<input type="text" name="NomeEquipe" placeholder="ex:Machado 98"><br>
+						<h5 style="color: #4db6ac ; font-size: 35px; text-align: center;">Matriculas</h5>
+						<label>Matricula</label>
 					<input type="text" name="matricula1" placeholder="ex:aa8582aas"><br>
 						<label>Matricula</label>
 					<input type="text" name="matricula2" placeholder="ex:aa8582aas"><br>

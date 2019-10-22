@@ -1,6 +1,7 @@
 <?php 
 //Nome das varíaveis
 $id = 1;
+$NomeEquipe= $_POST['NomeEquipe'];
 $matricula1= $_POST['matricula1'];
 $matricula2= $_POST['matricula2'];
 $matricula3= $_POST['matricula3'];
@@ -19,6 +20,7 @@ endforeach;
 $fopen = fopen('../Csv/dadosGrup.csv','a');
 fwrite($fopen,
 	 $id.';/;'
+	.$NomeEquipe.';/;'
 	.$matricula1.';/;'
 	.$matricula2.';/;'
 	.$matricula3.';/;'

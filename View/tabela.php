@@ -1,5 +1,11 @@
 <?php
-include'header.php'; 
+session_start();
+//verif se existe usuario logado 
+if (!isset($_SESSION['id'])&& !isset($_SESSION['nome'])) {
+	header("location:../View/index.php");
+
+}
+include 'header.php'; 
 
  ?>
 <br><br>
@@ -7,12 +13,12 @@ include'header.php';
 	<div class="container ">
 	
 			
-			
-				<table>
-					<legend>Usuarios Cadastrados</legend>
+			<center>
+				<h1>Usuarios Cadastrados</h1>
+			</center>
+			<table style=" border: 5px solid black;">
 					<tr>
 					<th>Nome</th>
-					<th>CPF</th>
 					<th>matricula</th>
 					<th>Telefone</th>
 					<th>usuario</th>
@@ -26,11 +32,11 @@ include'header.php';
 						$explode = explode(";/;", $file[$coluna]); ?>
 					<tr>
 						<td><?=$explode[1]  ?></td>
-						<td><?= $explode[2]; ?></td>
 						<td><?= $explode[3]; ?></td>
 						<td><?= $explode[4]; ?></td>
 						<td><?= $explode[5]; ?></td>
 						<td><?= $explode[7]; ?></td>
+					
 						
 						
 						<td><a href="../Controller/excluir.php?id=<?=$coluna;?>">Excluir</a></td>

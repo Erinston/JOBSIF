@@ -22,8 +22,11 @@
     <div class="nav-wrapper container">
       <a id="logo-container" href="index.php" class="brand-logo">Jogos Internos IFPE</a>
       <ul class="right hide-on-med-and-down">
+  <?php 
+    if (!isset($_SESSION['id']) && !isset($_SESSION['nome'])): ?>
         <li><a href="login.php">Login</a></li>
         <li><a href="cadastro.php">Cadastro</a></li>
+  <?php endif;?>
 	         <li><a href="sobre.php">Sobre</a></li>
           <li><a href="../calendario/index.php">Calendario</a></li>
       </ul> 
@@ -31,7 +34,7 @@
       <ul id="nav-mobile" class="sidenav">
         <li> <center><h5 style=" background: #4db6ac">J O B S </h2></center></li>
         <li><a href="login.php">LOGIN</a></li> 
-        <li><a href="cadastro.php">Cadastro</a></li>  
+        <li><a href="cadastro.php">CADASTRO</a></li>  
         <li><a href="../calendario/index.php">CALENDARIO</a></li>
         <li><a href="regras.php">REGRAS</a></li> 
         <li><a href="sobre.php">SOBRE</a></li> 

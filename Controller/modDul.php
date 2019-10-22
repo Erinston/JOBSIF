@@ -2,8 +2,6 @@
 //Nome das varíaveis
 $id = 1;
 $matricula= $_POST['matricula'];
-$cpf1= $_POST['cpf1'];
-$cpf2= $_POST['cpf2'];
 $modalidade= $_POST['modalidade'];
 
 $file = file('dadosDul.csv');

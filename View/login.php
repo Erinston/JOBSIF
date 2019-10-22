@@ -17,7 +17,7 @@ include'header.php';
 	<ul class="collapsible ">
 			<div class="container row" >
 			<br>
-					<h1 style="color:white; font-size: 30px; border: 3px solid #4db6ac; text-align: center; background:#4db6ac; ">Login</h1>
+					<h1 style="color:#4db6ac; font-size: 30px; border: 3px solid white; text-align: center; background:white; ">Login</h1><br>
 				<form action="../Controller/auth.php" method="post">
 					<label>USUARIO:</label>
 					<input type="text" name="usuario" required>

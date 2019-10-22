@@ -10,16 +10,13 @@ include'header.php';
 ?>
 <style type="text/css">
 
-
-
-		
-	
 	
 		a{
 		color: black;	
 		}
 		div{
 			color: black;
+			margin-bottom: 5px;
 		}
 		ul{
 			text-align: center;
@@ -39,28 +36,41 @@ include'header.php';
 </center>
 		
 <br><br>
+				
+				
 <div class="container row">
 		<div class="container row">
 			<ul class="collapsible">
-				<h5 style="background: #4db6ac ;">ESCOLHA JOGO</h5>
+					<h5 style="color: #4db6ac ; font-size: 35px">ESCOLHA JOGO</h5>
 				<div>
-					<div > 
-						<a href="cadInd.php">Individual</a>	
+					<div style=" background:#4db6ac; margin-left: 30%; margin-right: 30% ; border: 1px solid black;" > 
+						<a href="cadInd.php"  style="color: white;">Individual</a>	
 					</div>
 
-					<div>
-						<a href="cadDup.php">Dupla</a>	
+					<div style=" background:#4db6ac; margin-left: 30%; margin-right: 30% ; border: 1px solid black;" >
+						<a href="cadDup.php"style="color: white;" >Dupla</a>	
 					</div>
 
-					<div>
-						<a href="cadGrp.php">Grupo</a>	
+					<div style=" background:#4db6ac; margin-left: 30%; margin-right: 30% ; border: 1px solid black;" >
+						<a href="cadGrp.php" style="color: white;">Grupo</a>	
 					</div>
 				</div>
+			<br>
 			</ul>
-			<br><br><br>	
+			<br><br>
+
 			<ul class="collapsible">
 
-					<a href="tabela.php"> Cadastrados de Usuarios</a>
+
+					<a href="tabela.php" style="color: black;">Usuarios Cadastrados</a>
+
+			</ul>
+			
+
+			<ul class="collapsible">
+
+				<a href="CadModali.php" style="color: black;">Modalidades Cadastradas</a><br>
+
 			</ul>
 					<br>
 	</div>
