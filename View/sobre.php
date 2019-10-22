@@ -3,10 +3,6 @@
 
 session_start();
 //verif se existe usuario logado 
-if (!isset($_SESSION['id'])&& !isset($_SESSION['nome'])) {
-  header("location:../View/index.php");
-
-}
 
 include'header.php'; 
 

@@ -96,7 +96,7 @@ include'header.php';
 					<th>Matriculas2</th>
 					<th>Matriculas3</th>
 					<th>Matriculas4</th>
-					<th>Matriculas5</th>
+					<th>Jogo</th>
 					<th>Excuir</th>
 				
 				  	</tr>
