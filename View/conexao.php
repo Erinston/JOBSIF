@@ -1,6 +1,6 @@
 <?php 
 define(SERVER, 'localhost');
-define(BANCO, 'cadastro');
+define(BANCO, 'user');
 define(SENHA, '');
 define(USER, 'root');
 
