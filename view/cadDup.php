@@ -4,7 +4,7 @@
 session_start();
 //verif se existe usuario logado 
 if (!isset($_SESSION['id'])&& !isset($_SESSION['nome'])) {
-  header("location:../View/index.php");
+  header("location:../view/index.php");
 
 }
 

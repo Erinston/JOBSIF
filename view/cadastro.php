@@ -2,7 +2,7 @@
 //verif se existe usuario logado 
 session_start();
 if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
-	header("location:../View/entrou.php");
+	header("location:../view/entrou.php");
 }
 include'header.php'; 
 
