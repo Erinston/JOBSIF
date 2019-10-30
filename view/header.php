@@ -23,12 +23,23 @@
       <a id="logo-container" href="index.php" class="brand-logo">Jogos Internos IFPE</a>
       <ul class="right hide-on-med-and-down">
   <?php 
-    if (!isset($_SESSION['id']) && !isset($_SESSION['nome'])): ?>
+    if (!isset($_SESSION['id']) && !isset($_SESSION['usuario'])): ?>
         <li><a href="login.php">Login</a></li>
         <li><a href="cadastro.php">Cadastro</a></li>
   <?php endif;?>
-	         <li><a href="sobre.php">Sobre</a></li>
+	         <li><a href="regras.php">Regras</a></li> 
+         <li><a href="sobre.php">Sobre</a></li>
           <li><a href="../calendario/index.php">Calendario</a></li>
+
+   <?php 
+   if (isset($_SESSION['id']) && isset($_SESSION['usuario'])): ?>
+    
+        <li>
+          <a href="../Controller/logout.php">sair</a>
+        </li>
+  
+  <?php endif;?>
+            
       </ul> 
 
       <ul id="nav-mobile" class="sidenav">
@@ -42,6 +53,7 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+
 
      
       
