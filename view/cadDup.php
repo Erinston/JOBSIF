@@ -15,7 +15,7 @@ include'header.php';
 	<div class="container row">
 		<div class="container row">
 			<ul class="collapsible">
-			<form action="../Controller/modDul.php" method="post">
+			<form action="../controller/modDul.php" method="post">
  <center>
 				<h5 style="color: #4db6ac ; font-size: 35px">Modalidade</h5>
 				<input type="checkbox" name="modalidade"value="FutVolei">FutVolei<br>

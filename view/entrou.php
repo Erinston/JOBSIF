@@ -75,7 +75,7 @@ include'header.php';
 					<br>
 	</div>
 	<button style="background:white;">
-		<a href="../Controller/logout.php">sair</a>
+		<a href="../controller/logout.php">sair</a>
 	</button>
  
 </div>

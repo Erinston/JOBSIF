@@ -4,7 +4,7 @@
 session_start();
 //verif se existe usuario logado 
 if (!isset($_SESSION['id'])&& !isset($_SESSION['nome'])) {
-  header("location:../View/index.php");
+  header("location:../view/index.php");
 
 }
 
@@ -18,7 +18,7 @@ include'header.php';
 			<div class="container row">
 				<div class="container row">
 					<div class="collapsible">
-						<form action="../Controller/modInd.php" method="post">
+						<form action="../controller/modInd.php" method="post">
 							<h5 style="color: #4db6ac ; font-size: 35px">Modalidade</h5><br>
 						  <input type="checkbox" name="modalidade" value="Dama">Dama<br>
 						  <input type="checkbox" name="modalidade" value="Xadres">Xadres<br>

@@ -17,7 +17,7 @@ foreach ($file as $coluna => $key):
 endforeach;
 
 //Adicionando no arquivo CSV
-$fopen = fopen('../Csv/dadosGrup.csv','a');
+$fopen = fopen('../csv/dadosGrup.csv','a');
 fwrite($fopen,
 	 $id.';/;'
 	.$NomeEquipe.';/;'
@@ -30,6 +30,6 @@ fwrite($fopen,
 fclose($fopen);
 	
 //Redirecionando para o arquivo index.php
-header("location: ../View/entrou.php");
+header("location: ../view/entrou.php");
 
  ?>

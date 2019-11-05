@@ -17,7 +17,7 @@ include'header.php';
 	<div class="container row">
 		<div class="container row">
 			<ul class="collapsible">
-			<form action="../Controller/modGrup.php" method="post">
+			<form action="../controller/modGrup.php" method="post">
 				<center>
 					
 					<h5 style="color: #4db6ac ; font-size: 35px">Modalidade</h5>

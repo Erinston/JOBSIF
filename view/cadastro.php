@@ -22,7 +22,7 @@ include'header.php';
 		<div class="container row">
 				<h1  style="color:#4db6ac; font-size: 30px; border: 3px solid white; text-align: center; background:white;">Cadastro</h1><br>
 
-			<form action="../Controller/adicionar.php" method="post">
+			<form action="../controller/adicionar.php" method="post">
 				<div class="row">
 					<div class="input-field col s7">
 						<label>NOME:</label>

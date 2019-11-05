@@ -2,7 +2,7 @@
 session_start();
 //verif se existe usuario logado 
 if (!isset($_SESSION['id'])&& !isset($_SESSION['nome'])) {
-	header("location:../View/index.php");
+	header("location:../view/index.php");
 
 }
 include 'header.php'; 
@@ -27,7 +27,7 @@ include 'header.php';
 				  	</tr>
 				<ul>
 					<?php 
-						$file =file('../Csv/usuario.csv');
+						$file =file('../csv/usuario.csv');
 						 foreach ($file as $coluna => $key): 
 						$explode = explode(";/;", $file[$coluna]); ?>
 					<tr>
@@ -39,7 +39,7 @@ include 'header.php';
 					
 						
 						
-						<td><a href="../Controller/excluir.php?id=<?=$coluna;?>">Excluir</a></td>
+						<td><a href="../controller/excluir.php?id=<?=$coluna;?>">Excluir</a></td>
 					</tr>
 				<?php endforeach;?>
 					

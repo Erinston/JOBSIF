@@ -9,6 +9,6 @@ $usuario= $_POST['usuario'];
 $pw= $_POST['pw'];
 $funcao= 'usuario';
 //Redirecionando para o arquivo index.php
-header("location: ../View/login.php");
+header("location: ../view/login.php");
 
  ?>

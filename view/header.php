@@ -35,7 +35,7 @@
    if (isset($_SESSION['id']) && isset($_SESSION['usuario'])): ?>
     
         <li>
-          <a href="../Controller/logout.php">sair</a>
+          <a href="../controller/logout.php">sair</a>
         </li>
   
   <?php endif;?>
