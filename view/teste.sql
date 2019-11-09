@@ -1,1 +1,0 @@
-CREATE TABLE `user`.`dados` ( `cpf` INT(11) NOT NULL , `nome` VARCHAR(45) NOT NULL , `usuario` VARCHAR(45) NOT NULL , `telefone` INT(11) NOT NULL , `funcao` VARCHAR(45) NOT NULL , `matricula` TEXT NOT NULL , PRIMARY KEY (`cpf`) ENGINE = InnoDB;
