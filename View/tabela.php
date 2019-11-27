@@ -22,32 +22,43 @@ include 'header.php';
 					<th>matricula</th>
 					<th>Telefone</th>
 					<th>usuario</th>
-					<th>Funçao</th>
 					<th>Excuir</th>
 				  	</tr>
-				<ul>
-					<?php 
-						$file =file('../Csv/usuario.csv');
-						 foreach ($file as $coluna => $key): 
-						$explode = explode(";/;", $file[$coluna]); ?>
-					<tr>
-						<td><?=$explode[1]  ?></td>
-						<td><?= $explode[3]; ?></td>
-						<td><?= $explode[4]; ?></td>
-						<td><?= $explode[5]; ?></td>
-						<td><?= $explode[7]; ?></td>
-					
-						
-						
-						<td><a href="../Controller/excluir.php?id=<?=$coluna;?>">Excluir</a></td>
-					</tr>
-				<?php endforeach;?>
-					
+			<?php
+require_once('../Controller/conexao.php'); 
 
 
-				</table>
-		</div>
-	</div>
+$sql2= "SELECT * FROM usuarios";
+$queryOne = $conn ->prepare($sql2);
+$queryOne -> execute();
+$usuarios = $queryOne-> fetchALL();
+
+
+
+
+	
+	foreach ($usuarios as $usuario):
+		if ($usuario[1] == $usuario[1]):
+?>
+	<tr>
+		<td>
+			<?=$usuario['NOME'];?>
+		</td><td>
+			<?=$usuario['MATRICULA'];?>
+		</td><td>
+			<?=$usuario['TELEFONE'];?>
+		</td><td>
+			<?=$usuario['USUARIO'];?>
+		</td>
+	<td>
+            <a href="../Controller/excluir.php?id=<?=$usuario[0];?>">X</a>
+    </td>
+	
+	<?php 
+			endif;
+		endforeach;
+	?>
+</table>
 
 
 </ul>

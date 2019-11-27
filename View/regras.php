@@ -1,9 +1,5 @@
-
-<?php
+<?php 
 session_start();
-if (isset($_SESSION['id'])&& isset($_SESSION['usuario'])) {
-	header("location:../View/entrou.php");
-} 
 include'header.php'; 
 ?>
 <style type="text/css">

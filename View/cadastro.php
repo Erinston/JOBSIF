@@ -42,14 +42,15 @@ include'header.php';
 		      <label>
 		        <input class="with-gap" name="box" type="radio" id="egresso"  />
 		        <span>Egresso</span>
-		      </label><br>
+		      </label>
+		      <br>
 
 				<div id="divMatricula">
 					<label id="labelMatricula">MATRICULA:</label>
 					<input type="text" name="matricula" required>
 				</div>
-
-				<label>USUARIO:*</label>
+				
+				<h11>USUARIO:*</h10>
 				<input type="text" name="usuario" required>
 				<label>SENHA:*</label>
 				<input type="password" name="senha" placeholder="*******" required>
