@@ -13,6 +13,7 @@
   <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="bootstrap-4.0.0-dist/css/bootstrap.min.css"></script>
   
   <script src="../js/materialize.js"></script>
   <script src="../js/init.js"></script>

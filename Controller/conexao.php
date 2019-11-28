@@ -1,4 +1,4 @@
 <?php 
-$conn = new PDO ('mysql:host=localhost;dbname=jobs','root', '');
+$conn = new PDO ('mysql:host=localhost;dbname=JOBS','root', '');
 
 ?>
