@@ -4,9 +4,16 @@ $c = 0;
 $usuario= $_POST['usuario'];
 $senha= $_POST['senha'];
 
-
+  if(isset($_POST['senha'])){
+  $valor = "202cb962ac59075b964b07152d234b70";
+  $senha = md5($_POST['senha']);
+  if($valor == $senha)
+    echo "Sim são os mesmos valores.";
+  else
+    echo "Não são os mesmos valores.";
+}
 require_once('../Controller/conexao.php');
-$sql = 'SELECT * from usuarios where usuario=? and senha=?';
+$sql = 'SELECT * from USUARIOS where usuario=? and senha=?';
 $queryOne=$conn->prepare($sql);
 $queryOne->bindParam(1,$usuario);
 $queryOne->bindParam(2,$senha);
@@ -18,48 +25,11 @@ if($queryOne->rowCount() >= 1 ):
 	session_start();
 	$_SESSION['usuario'] = $usuario;
 	$_SESSION['id'] = $stmt[0]['MATRICULA'];
+  $_SESSION['tipoUser'] = $stmt[0]['TIPOS_USER'];
 	header('location:../View/index.php');
+
 else: ?>
-	
 <?php 
+	header('location:../View/login.php');
 endif;
 ?>
-
-
-
-
-
-
-
-<!-- 
-
-
-
-
-
-$file = file('../Csv/usuario.csv'); 
-foreach ($file as $coluna => $key):
-	$explode = explode(";/;", $file[$coluna]);
-	if ($usuario == $explode[5] && $pw == $explode[6]):
-		$v =$explode;
-		$c++;
-	endif;
-endforeach;
-		
-if ($c > 0) {
-	session_start();
-	$_SESSION['id'] = $v[0];
-	$_SESSION['usuario'] = $v[1];
-header("location:../View/entrou.php");
-
-}else{
-header("location:../View/login.php");
-
-}
-
- ?>
- starta a sessao
- if  isset()
-
-	
-//Redirecionando para o arquivo index.php -->

@@ -30,10 +30,12 @@
   <?php endif;?>
 	         <li><a href="regras.php">Regras</a></li> 
          <li><a href="sobre.php">Sobre</a></li>
-          <li><a href="../calendario/index.php">Calendario</a></li>
+          <li><a href="../calendarioatualizado/index.php">Calendario</a></li>
 
     <?php if (isset($_SESSION['id']) && isset($_SESSION['usuario'])): ?>
         <li>
+          <a href="entrou.php">Registra</a>
+        </li><li>
           <a href="../Controller/logout.php">sair</a>
         </li>
   
@@ -47,7 +49,7 @@
         <li><a href="login.php">LOGIN</a></li> 
         <li><a href="cadastro.php">CADASTRO</a></li>  
   <?php endif;?>
-        <li><a href="../calendario/index.php">CALENDARIO</a></li>
+        <li><a href="../calendarioatualizado/index.php">CALENDARIO</a></li>
         <li><a href="regras.php">REGRAS</a></li> 
         <li><a href="sobre.php">SOBRE</a></li> 
     <?php if (isset($_SESSION['id']) && isset($_SESSION['usuario'])): ?>

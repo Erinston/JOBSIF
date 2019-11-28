@@ -1,3 +1,6 @@
+
+DROP DATABASE JOBS;
+
 CREATE DATABASE JOBS;
 USE JOBS;
 
@@ -22,6 +25,7 @@ CREATE TABLE MODALIDADES(
 );
 CREATE TABLE TIMES(
 	ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	PONTOS INT(10),
 	NOME VARCHAR (40) NOT NULL,
 
 	MOD_ID INT NOT NULL,
@@ -37,3 +41,16 @@ CREATE TABLE PARTICIPANTES(
 	TIMES_ID INT NOT NULL,
 	CONSTRAINT FK_TIMES_PART FOREIGN KEY (TIMES_ID) REFERENCES TIMES(ID)
 );
+insert into TIPOS_USER(NOME) values('administrador');
+insert into TIPOS_USER(NOME) values('aluno');
+insert into TIPOS_USER(NOME) values('professor');
+insert into TIPOS_USER(NOME) values('egresso');
+
+insert into MODALIDADES(nome) values
+    ('LOL'),
+    ('FIFA'),
+    ('CSS'),
+    ('DOMINO'),
+    ('XADRES'),
+    ('VOLEY'),
+    ('FUTSAL');

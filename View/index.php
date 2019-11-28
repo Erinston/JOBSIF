@@ -6,7 +6,14 @@ if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
 } 
 include'header.php'; 
 ?>
-	
+	    <?php if (isset($_SESSION['id']) && isset($_SESSION['usuario'])): ?>
+  
+          <script type="text/javascript"> 
+              alert("você está logado");
+          </script>
+  
+    <?php endif;?>
+
 	
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">

@@ -6,6 +6,7 @@ $NOME= $_POST["nome"];
 $TELEFONE= $_POST["telefone"];
 $USUARIO= $_POST["usuario"];
 $SENHA= $_POST["senha"];
+$SENHA= md5($SENHA);
 $TIPOS_USER = $_POST["tipoUser"];
 
 $sql2 = "INSERT INTO usuarios(MATRICULA,NOME,TELEFONE,USUARIO,SENHA,TIPOS_USER) VALUES(:matricula,:nome,:telefone,:usuario,:senha,:tipo)";

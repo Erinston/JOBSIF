@@ -23,114 +23,46 @@ include'header.php';
 			
 			
 				<table style=" border: 5px solid black;">
-					<h4>Usuarios Individual</h4>
+				
 					<tr>
-					<th>Matricula</th>
-					<th>Jogo</th>
+					<th>TIMES</th>
+					<th>MODALIDADES</th>
+					<th>USUARIO</th>
 					<th>Excuir</th>
 				  	</tr>
 				<ul>
 					<?php 
-						$file =file('../Csv/dadosInd.csv');
-						 foreach ($file as $coluna => $key): 
-						$explode = explode(";/;", $file[$coluna]); ?>
-					<tr>
-						<td><?=$explode[0]  ?></td>
-						<td><?= $explode[1]; ?></td>
-						<td><a href="../Controller/excluirInd.php?id=<?=$coluna;?>">Excluir</a></td>
-					</tr>
-				<?php endforeach;?>
-					
+						require_once('../Controller/conexao.php'); 
+
+						$sql0= "SELECT * FROM `times`";
+						$queryOne = $conn ->prepare($sql0);
+						$queryOne -> execute();
+						$times = $queryOne-> fetchALL();
+						foreach ($times as $time):
+						if ($time[1] == $time[1]):
+
+						?>
+						<tr>
+							<td><?=$time['NOME'];?></td>
+							<td><?=$time['MOD_ID'];?></td>
+							<td><?=$time['USU_ID'];?></td>
+							<td>
+						            <a href="../Controller/excluir.php?id=<?=$time[0];?>">X</a>
+    						</td>
+						</tr>						
+	  					<?php endif?>
+						<?php endforeach;?>
+				</table>
 
 
 			</ul>
-				</table>
 		</div>
 	</div>
-<div class="container ">
-	<div class="container ">
-	
-			
-			
-				<table style=" border: 5px solid black;">
-					<h4>Usuarios em Dupla</h4>
-					<tr>
-					<th>Matricula</th>
-					<th>Matricula2</th>
-					<th>Jogo</th>
-					<th>Excuir</th>
-					</tr>
-				<ul>
-					<?php 
-						$file =file('../Csv/dadosDul.csv');
-						 foreach ($file as $coluna => $key): 
-						$explode = explode(";/;", $file[$coluna]); ?>
-					<tr>
-						<td><?=$explode[0]  ?></td>
-						<td><?= $explode[1]; ?></td>
-						<td><?= $explode[2]; ?></td>
-						
-						
-						
-						<td><a href="../Controller/excluirDul.php?id=<?=$coluna;?>">Excluir</a></td>
-					</tr>
-				<?php endforeach;?>
-					
 
-	</ul>
+<br>
+<br>
+<br>
 
-				</table>
-		</div>
-	</div>
-<div class="container ">
-	<div class="container ">
-	
-			
-			
-				<table style=" border: 5px solid black;">
-					<h4>Usuarios em grupo</h4>
-					<tr>
-			
-					<th>Nome da equipe</th>
-					<th>Matriculas1</th>
-					<th>Matriculas2</th>
-					<th>Matriculas3</th>
-					<th>Matriculas4</th>
-					<th>Jogo</th>
-					<th>Excuir</th>
-				
-				  	</tr>
-				<ul>
-					<?php 
-						$file =file('../Csv/dadosGrup.csv');
-						 foreach ($file as $coluna => $key): 
-						$explode = explode(";/;", $file[$coluna]); ?>
-					<tr>
-						
-						<td><?= $explode[1]; ?></td>
-						<td><?= $explode[2]; ?></td>
-						<td><?= $explode[3]; ?></td>
-						<td><?= $explode[4]; ?></td>
-						<td><?= $explode[5]; ?></td>
-						<td><?= $explode[6]; ?></td>
-					
-						<td><a href="../Controller/excluirGrup.php?id=<?=$coluna;?>">Excluir</a></td>
-					</tr>
-				<?php endforeach;?>
-					
-
-				
-</ul>
-				</table>
-		</div>
-	</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 </ul>
 </body>
 </html>
