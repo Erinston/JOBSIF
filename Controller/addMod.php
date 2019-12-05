@@ -1,6 +1,6 @@
 <?php 
 session_start();
-require ("conexao.php");
+require_once('conexao.php');
 
 $pontos= intval($_POST['pontos']);
 $nome= $_POST['nome'];

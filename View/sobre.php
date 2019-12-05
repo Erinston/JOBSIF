@@ -1,5 +1,4 @@
 <?php  
-//verif se existe usuario logado 
 
 session_start();
 //verif se existe usuario logado 
@@ -29,16 +28,81 @@ td,th{
 }
 
   </style>
+<br><br><br>
+	 <div class="row" style="margin-left: 500px">
+    <div class="col s12 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="../josivaldo.jpg">
+        </div>
+        <div class="card-content">
+          <p>Erinston Ferreira da Silva Nascimento.</p>
+        </div>
+        <div class="card-action">
+          <li>
+            <a href="#">Git:Josivaldonatal</a>
+           </li>
+           <li>
+            <a href="#">email:erinstong@gmail.com</a>
+           </li>
+           <li>
+           <a href="#">telefone:85572470</a>
+           </li>
+        </div>
+      </div>
+    </div>
 
-	
+    <div class="col s12 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="../jackson.jpg">      
+        </div>
+        <div class="card-content">
+          <p>Jackson da Silva.</p>
+        </div>
+        <div class="card-action">
+          <li>
+            <a href="#">Git:Jackson29</a>
+           </li>
+           <li>
+            <a href="#">email:erinstong@gmail.com</a>
+           </li>
+           <li>
+           <a href="#">telefone:85572470</a>
+           </li>
+        </div>
+      </div>
+    </div> 
+    <div class="col s12 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="../erinston.jpg">
+          
+        </div>
+        <div class="card-content">
+          <p>Erinston Ferreira da Silva Nascimento.</p>
+        </div>
+        <div class="card-action">
+            <li>
+            <a >Git:Erinston</a>
+           </li>
+           <li>
+            <a >email:erinstong@gmail.com</a>
+           </li>
+           <li>
+           <a >telefone:85572470</a>
+           </li>
+        </div>
+      </div>
+    </div>
+  </div>
+
 	<?php
 	$linhas =[ 
       
-      ["João Matheus", "19", "joao.matheus0101@gmail.com","Matheus1111999","984876838"],
       ["Josivaldo Natal", "32", "josivaldonatal@gmail.com", "Josivaldonatal","992631606"], 
       ["Jackson da Silva", "31", "jacksonssantos882@gmail.com", "Jackson29", "988190653"],
       ["Erinston Ferreira", "20", "erinstong@gmail.com", "Erinston", "985572470"],
-      ["Ginaldo Ribero", "28", "sammykawaii@gmail.com", "Ninmery", "998303366"]	
 	]	 
 	 ?>
   

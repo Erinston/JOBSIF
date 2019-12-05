@@ -1,20 +1,20 @@
 <?php  
-require_once('../Controller/conexao.php');
 session_start();
 //verif se existe usuario logado 
-if (!isset($_SESSION['id'])&& !isset($_SESSION['nome']) && !isset($_SESSION['tipoUser'])) {
+if (!isset($_SESSION['id'])&& !isset($_SESSION['usuario'])) {
 	header("location:../View/index.php");
 }
 include'header.php'; 
+require_once('../Controller/conexao.php');
 ?>
 <!-- Selecionar todas as modalidades -->
-<?php $sql1 = 'SELECT * from modalidades'; ?>
+<?php $sql1 = 'SELECT * from MODALIDADES'; ?>
 <?php $queryOne = $conn->prepare($sql1); ?>
 <?php $queryOne->execute(); ?>
 <?php $modalidades = $queryOne->fetchAll(); ?>
 
 <!-- Selecionar todos os times do usuário -->
-<?php $sql3 = 'SELECT * from `times` INNER JOIN modalidades ON `times`.`mod_id`=`modalidades`.`id` where usu_id = :usuario'; ?>
+<?php $sql3 = 'SELECT * from `TIMES` INNER JOIN MODALIDADES ON `TIMES`.`MOD_ID`=`MODALIDADES`.`id` where USU_ID = :usuario'; ?>
 <?php $queryThree = $conn->prepare($sql3); ?>
 <?php $queryThree->bindParam(':usuario', $_SESSION['id']); ?>
 <?php $queryThree->execute(); ?>
@@ -97,7 +97,13 @@ include'header.php';
 			</table>
 		</ul>
 	<?php endif ?>
+
 	<?php if ($_SESSION['tipoUser'] == 1): ?>
+		<ul class="collapsible">
+            <a href="alterarPontos.php" style="color: black;"> Alterar Pontos</a>
+    </ul>
+			
+
 		<ul class="collapsible">
 			<a href="tabela.php" style="color: black;">Usuarios Cadastrados</a>
 		</ul>

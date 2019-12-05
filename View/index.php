@@ -1,7 +1,7 @@
 <?php  
 //verif se existe usuario logado 
 session_start();
-if (isset($_SESSION['id'])&& isset($_SESSION['nome'])) {
+if (isset($_SESSION['id'])&& isset($_SESSION['usuario'])) {
 	
 } 
 include'header.php'; 
@@ -19,12 +19,12 @@ include'header.php';
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Escolha Modalidade</h1>
+        <h1 class="header center teal-text text-lighten-2">SEJA BEM VINDO</h1>
         <div class="row center">
-          <h5 class="header col s12 light">JOGOS</h5>
+          <h5 class="header col s12 light">CADASTRE-SE</h5>
         </div>
         <div class="row center">
-          <a href="entrou.php" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">entre</a>
+          <a href="cadastro.php" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">entre</a>
         </div>
         <br><br>
 

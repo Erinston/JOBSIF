@@ -13,7 +13,6 @@
   <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="bootstrap-4.0.0-dist/css/bootstrap.min.css"></script>
   
   <script src="../js/materialize.js"></script>
   <script src="../js/init.js"></script>
@@ -28,14 +27,20 @@
         <li><a href="login.php">Login</a></li>
         <li><a href="cadastro.php">Cadastro</a></li>
   <?php endif;?>
+    <?php if (isset($_SESSION['id']) && isset($_SESSION['usuario'])): ?>
+        <li>
+          <a href="entrou.php">Registra</a>
+        </li>
+        <li>
+          <a href="classificacao.php">Classificação</a>
+        </li>
+    <?php endif;?>
 	         <li><a href="regras.php">Regras</a></li> 
          <li><a href="sobre.php">Sobre</a></li>
           <li><a href="../calendarioatualizado/index.php">Calendario</a></li>
 
     <?php if (isset($_SESSION['id']) && isset($_SESSION['usuario'])): ?>
         <li>
-          <a href="entrou.php">Registra</a>
-        </li><li>
           <a href="../Controller/logout.php">sair</a>
         </li>
   

@@ -53,11 +53,11 @@ $usuarios = $queryOne-> fetchALL();
 	<td>
             <a href="../Controller/excluir.php?id=<?=$usuario[0];?>">X</a>
     </td>
-	
 	<?php 
 			endif;
 		endforeach;
 	?>
+	</tr>
 </table>
 
 
